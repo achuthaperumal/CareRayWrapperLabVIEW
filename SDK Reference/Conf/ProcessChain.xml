@@ -1,0 +1,33 @@
+<Detectors>
+    <Detector ID="1">
+        <Fluoroscopy>
+            <AppModeKey ID="default">
+                <chain>Reorder;PatchBlock;Offset;Gain;Defect;ImgCropping</chain>
+            </AppModeKey>
+            <!-->DO NOT EDIT complete node</-->
+            <AppModeKey ID="complete">
+                <chain>Reorder;PatchBlock;Offset;Gain;Defect;ImgCropping;MiddleStep;Lag;RTBadPixel;Denoising;AddOn(CR_StepSuppression);GaussFilter;AddOn(CR_RotateImg90)</chain>
+            </AppModeKey>
+            <!-->DO NOT EDIT complete node</-->
+            <!-->DO NOT EDIT original node</-->
+            <AppModeKey ID="original">
+                <chain>Reorder;PatchBlock;Offset;Gain;ImgCropping;Defect</chain>
+            </AppModeKey>
+            <!-->DO NOT EDIT original node</-->
+        </Fluoroscopy>
+        <RAD>
+            <AppModeKey ID="default">
+                <chain>Offset;Gain;Defect;ImgCropping</chain>
+            </AppModeKey>
+            <!-->DO NOT EDIT complete node</-->
+            <AppModeKey ID="complete">
+                <chain>Offset;Gain;Defect;ImgCropping;MiddleStep</chain>
+            </AppModeKey>
+            <!-->DO NOT EDIT complete node</-->
+            <AppModeKey ID="original">
+                <chain>Offset;Gain;Defect;ImgCropping</chain>
+            </AppModeKey>
+            <!-->DO NOT EDIT original node</-->
+        </RAD>
+    </Detector>
+</Detectors>
